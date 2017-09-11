@@ -1,0 +1,7 @@
+cd ~/.backgrounds/
+while [ 1 ]
+  do
+  VAR=$(pwd)/$(ls ~/.backgrounds | shuf -n 1)
+  feh --bg-scale $VAR
+  sleep $(( 60 * 15 ))
+  done
