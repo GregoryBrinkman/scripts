@@ -28,6 +28,6 @@ fetch("http://w1.weather.gov/xml/current_obs/display.php?stid=KMDH").then((res) 
         var temp_f = response.match(/<temp_f[^>]*>([^<]+)<\/temp_f>/)[1];
         var weather = response.match(/<weather[^>]*>([^<]+)<\/weather>/)[1];
         // process.stdout.write(temp_f, weather);
-        console.log(temp_f + "° F " + weather);
+        console.log(weather + " - " + temp_f + "° F");
     });
 });
